@@ -1,1 +1,1 @@
-# MART341-Intro-to-Web-Design
+# MART341-Intro to Web Design
