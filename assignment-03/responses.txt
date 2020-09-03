@@ -1,0 +1,18 @@
+1. Websites I Enjoy Visiting
+    - www.amazon.com
+    - www.youtube.com
+    - www.twitch.tv
+
+2. Relationship between IP address and the DNS
+    The DNS is the name of a website in readable format such as 'amazon.com' whereas the IP address is the name of the 
+    site in number format. The DNS name is translated into the IP adress and returned for users when they are accessing a 
+    website.
+
+3. What is a cookie?
+    A cookie is a local file that a site stores on your computer to hold your information for their service.
+
+4. Essential parts of an URL
+    - Protocol: Neccessry to know if your information is secure or not.
+    - Domain: The name where people can access your website.
+    - Path: The way your website is being navigated by the user. Shows thier path so they can backtrack and see how
+            they got to the location they are at.
