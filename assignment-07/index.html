@@ -16,10 +16,12 @@
     </head>
 
     <body>
-        <h1>
-            <img src="images/Jimmy_Johns_Logo.png" title="Jimmy Johns Logo" alt="Jimmy johns introduction logo w/ sub background" width="50" height="50">
-            Contact Page
-        </h1>
+        <p class="aligncenter">
+            <h1>
+                <img src="images/Jimmy_Johns_Logo.png" title="Jimmy Johns Logo" alt="Jimmy johns introduction logo w/ sub background" width="50" height="50">
+                Contact Page
+            </h1>
+        </p>
         <hr />
         <table>
             <tr>
@@ -58,36 +60,40 @@
                 <td>10:30AM-8PM</td>
             </tr>
         </table>
+        <br />
         <address>
             2230 N REserve St Ste. 420<br /> 
             (406)543-8100
         </address>
+        <br />
         <h2>Feedback</h2>
-        <p>Give us feedback at <a href="malito:feedback@jimmyjohns.com">feedback@jimmyjohns.com</a> or fill out the form below</p>
         <hr />
+        <p>Give us feedback at <a href="malito:feedback@jimmyjohns.com">feedback@jimmyjohns.com</a> or fill out the form below</p>
         <br />
         <form action="index.html" method="POST">
-            <legend>Feedback Form</legend>
-            <label for="nametxt">
-                Name:
-                <input type="text" name="nametxt" id="nametxt" required>
-                <br />
-            </label>
-            <label for="emailtxt">
-                Email:
-                <input type="email" name="emailtxt" id="emailtxt" placeholder="ex. username@gmail.com" required>
-                <br />
-            </label>
-            <p>Type of service recieved:</p>
-                <input type="checkbox" name="services" value="instore" checked/> In Store
-                <input type="checkbox" name="services" value="pickup"/> Pickup
-                <input type="checkbox" name="services" value="delivery"/> Delivery
-            <br/>
-            <p>
-                Feedback:<br />
-                <textarea name="feedback" id="feedback-textarea">Enter up to 500 characters...</textarea>
-            </p>
-            <input type="submit" name="feedback-submit" value="Submit Feedback">
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="nametxt">
+                    Name: 
+                    <input type="text" name="nametxt" id="nametxt" required>
+                    <br />
+                </label>
+                <label for="emailtxt">
+                    Email:
+                    <input type="email" name="emailtxt" id="emailtxt" placeholder="ex. username@gmail.com" required>
+                    <br />
+                </label>
+                <p>Type of service recieved:</p>
+                    <input type="checkbox" name="services" value="instore" checked/> In Store
+                    <input type="checkbox" name="services" value="pickup"/> Pickup
+                    <input type="checkbox" name="services" value="delivery"/> Delivery
+                <br/>
+                <p>
+                    Feedback:<br />
+                    <textarea name="feedback" id="feedback-textarea">Enter up to 500 characters...</textarea>
+                </p>
+                <input type="submit" name="feedback-submit" value="Submit Feedback">
+            </fieldset>
         </form>
     </body>
 </html>
