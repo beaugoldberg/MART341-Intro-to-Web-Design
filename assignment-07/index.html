@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<hmtl>
+    <head>
+        <title>Business Page</title><!--This is the only required tag in the head-->
+        <meta charset="UTF-8">
+        <meta name="author" content="Beau Goldberg">
+        <meta name="description" content="Page displaying business information">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Contact Page</h1>
+        <hr />
+        <img src="images/Jimmy_Johns.png" title="Jimmy Johns Logo" alt="Jimmy johns introduction logo w/ sub background" width="1000" height="500">
+        <address>
+            2230 N REserve St Ste. 420 
+            (406)543-8100
+        </address>
+        <p>Give us feedback at <a href="malito:feedback@jimmyjohns.com">feedback@jimmyjohns.com</a></p>
+        <table>
+            <tr>
+                <th scope="col">Hours</th>
+                <td>Monday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Tuesday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Wednesday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Thursday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Friday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Saturday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Sunday</td>
+                <td>10:30AM-8PM</td>
+            </tr>
+        </table>
+        <form action="index.html" method="POST">
+            <label for="nametxt">
+                Name:
+                <input type="text" name="nametxt" id="nametxt" required>
+                <br />
+            </label>
+            <label for="emailtxt">
+                Email:
+                <input type="email" name="emailtxt" id="emailtxt" placeholder="ex. username@gmail.com" required>
+                <br />
+            </label>
+            <p>Type of service recieved:</p>
+                <input type="checkbox" name="services" value="instore" checked/> In Store
+                <input type="checkbox" name="services" value="pickup"/> Pickup
+                <input type="checkbox" name="services" value="delivery"/> Delivery
+            <br/>
+            <p>
+                Feedback:
+                <textarea name="feedback" id="feedback-textarea">Enter up to 500 characters...</textarea>
+            </p>
+        </form>
+    </body>
+</html>
