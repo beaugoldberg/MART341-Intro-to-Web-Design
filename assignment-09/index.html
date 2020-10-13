@@ -13,11 +13,89 @@
     <body>
         <h1>NavMesh Guide in Unity 3D</h1>
         <hr/>
-        <h3>Step 1: Gather Resources</h3>
-        <p> 
-            Resources for this tutorial can be gathered at <a href="https://github.com/Brackeys/NavMesh-Tutorial">github.com/Brackeys/NavMesh-tutorial</a>
-        </p>
-        <p> Neccesary Resources: </p>
-
+        <div>
+            <h3>Step 1: Gather Resources</h3>
+            <p>Resources for this tutorial can be found at <a href="https://github.com/Unity-References/NavMesh-Tutorial">github.com/Unity-References/NavMesh-Tutorial</a></p>
+            <p>What you need:</p>
+            <ul>
+                <li>NavMeshComponents Folder: Contains NavMesh Scripts</li>
+                <li>'Example01 - Basics.unity': Contains Sample Scene</li>
+                <li>Example01/Materials Folder: Contains Materials to Stylize the Sample Scene</li>
+            </ul>
+            <p>These files can just be inserted into the assests folder</p>
+        </div>
+        <div>
+            <h3>Step 1.2: How to Grab Folders From Github Repository</h3>
+            <p>
+                Unfortunatly, Github doesnt have a built in feature allowing for an individual to download a complete folder at once. To get all the files in a folder on Github 
+                the following process can be done.
+            </p>
+            <ul>
+                <li>Option 1: Dowload Each File</li>
+                <ul>
+                    <li>Go through folder and download each file one at a time and recreate file structure in Unity</li>
+                </ul>
+                <br/>
+                <li>Option 2: Github Desktop (Recommended)</li>
+                <ul>
+                    <li>Make sure you have <a href="https://desktop.github.com/">Github Desktop</a> downloaded</li>
+                    <li>
+                        Fork the repository contaning the wanted files. Fork it under your user or organization
+                    </li>
+                    <li>Open Github Desktop and Clone the forked repository to your desktop</li>
+                    <li>Locate the Github folder on your hardrive to find the desired files</li>
+                    <li>Drag the files for the project into your Unity Project</li>
+                </ul>
+            </ul>
+            <p>Once the files are in your Unity Project, we can begin working with NavMesh</p>
+        </div>
+        <div>
+            <h3>Step 2: Build NavMesh Field</h3>
+            <p>
+                To start working with NavMesh, you first need to open the example scene that was grabbed from the Github folder. In this scene you can apply materials to the
+                ground and wall objects to make them stand out more. Once the scene is open it should look like this:
+                <br/><br/><img src="images/initial-scene.png" alt="Image of the initial scene" title="Initial Scene View" width="600" height="600"><br/>
+            </p>
+            
+            <p> Building the NavMesh Field can be done by completing the following steps</p>
+            <ol>
+                <li>Create an empty GameObject in Heirarchy and rename <i>NavMesh</i></li>
+                <li>Add the <i>NavMeshSurface</i> script as a component to the NavMesh object</li>
+                <li>
+                    In the NavMeshSurface component, click <i>bake</i>. This will create a NavMeshSurface based on the rendering of the level
+                    <br/><br/><img src="images/nav-mesh-2.png" alt="Image of the initial NavMesh bake" title="Initial NavMesh Bake" width="600" height="600">
+                </li>
+                <br/>
+                <li>You can see that the NavMeshSurface bake identifies the walls as walkable, we dont want this. To make the walls unwalkable, click on the 
+                    <i>Walls</i> object and add the <i>NavMeshModifier</i> script as a component. Toggle the <i>Override Area</i> field in the NavMeshModifier
+                    and then change <i>Area Type</i> to <i>Not Walkable</i>. Now rebake the NavMeshSurface and the walls should become unwalkable!
+                </li>
+                <br/><img src="images/nav-mesh-1.png" alt="Image of the NavMesh bake with walls excluded" title="NavMesh Bake Without Walls" width="600" height="600"><br/>
+            </ol>
+            <p>Now the NavMesh Field is set up and we can move on to making the AI move inside of this field</p>
+        </div>
+        <div>
+            <h3>Step 3: Implement AI on the Player</h3>
+            <p>
+                Follow these setps to implement an AI controller that makes the player move along the NavMesh to wherever you click!
+            </p>
+            <ol>
+                <li>Apply a box collider to the ground object. This will allow for the AgentController Script to work correctly</li>
+                <li>Add the <i>Nav Mesh Agent</i> component to the <i>Player</i> object</li>
+                <li>Add the <i>Agent Contoller</i> script to the <i>Player</i> object</li>
+                <li>Drag the <i>Main Camera</i> object into the <i>Agent Controller Script</i> in the <i>Cam</i> field</li>
+                <li>Drag the <i>Nav Mesh Agent</i> component on the Player down into the <i>Agent</i> field in the <i>Agent Controller Script</i></li>
+            </ol>
+            <p> Your NavMesh AI system is now setup! Run the game and click anywhere on the ground block and your Player should find the optimal path to that point and move there!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CHV1ymlw-P8?start=609" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h3>Further Resources & Full Tutorial Video</h3>
+            <p>This tutorial and the resouces are not my own there are credit of <a href="https://www.youtube.com/user/Brackeys">Brackeys</a> youtube channel. Check his channel 
+                out for further tutorials in Unity.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CHV1ymlw-P8" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </body>
 </html>

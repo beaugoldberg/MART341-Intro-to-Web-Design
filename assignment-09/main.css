@@ -2,4 +2,47 @@ body
 {
     text-align: center;
     align-items: center;
+    background-image: url("images/background-image.jpeg");
 }
+
+h1
+{
+    color: white;
+}
+
+h3 
+{
+    text-align: center;
+}
+
+div {
+    background-color: gainsboro;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+p
+{
+    text-align: left;
+}
+
+ul 
+{
+    text-align: left;
+}
+
+ol 
+{
+    text-align: left;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
