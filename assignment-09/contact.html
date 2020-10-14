@@ -7,9 +7,42 @@
         <meta name="description" content="Contact Form for Instructable Page">
         <meta name="keywords" content="unity, navmesh, AI, pathing, 3D">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
-    
-    <body>
 
+    <body>
+        <h1>Contact Me</h1>
+        <hr/>
+        <div>
+            <form action="contact.html" method="POST">
+                <fieldset style="border: 0px;">
+                    <label for="nametxt">
+                        Name:<br/>
+                        <input type="text" name="nametxt" id="nametxt" style="height: 20px; width: 300px;" required>
+                        <br />
+                    </label>
+                    <br />
+                    <label for="emailtxt">
+                        Email:<br/>
+                        <input type="email" name="emailtxt" id="emailtxt" placeholder="ex. username@gmail.com" style="height: 20px; width: 300px;" required>
+                        <br />
+                    </label>
+                    <label for="feedback-textarea">
+                        <br/>Feedback:<br />
+                        <textarea name="feedback" id="feedback-textarea" style="height: 150px; width: 500px;">Enter up to 500 characters...</textarea>
+                    </label>
+                    <br/>
+                    <input type="submit" name="feedback-submit" value="Submit Feedback" height="20px" width="40px">
+                    <br/>
+                    <pre>Or give me feedback at <a href="malito:beau.goldberg@umontana.edu">beau.goldberg@umontana.edu</a></pre>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <a href="index.html">Instructable</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="https://www.youtube.com/user/Brackeys" target="_blank">More Tutorials</a>
+        </div>
     </body>
 </html>
