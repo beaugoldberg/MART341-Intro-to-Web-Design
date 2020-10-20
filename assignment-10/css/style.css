@@ -1,0 +1,50 @@
+body 
+{
+    text-align: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+}
+
+div
+{
+    font-weight: bold;
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+p
+{
+    font-size: 24px;
+}
+
+/* These functions are used for differing color scheme throughout the website*/
+.color1
+{
+    background-color: #BF268A;
+}
+
+.color2
+{
+    background-color: #D93BBE;
+}
+
+.color3
+{
+    background-color: #F2C029;
+}
+
+.color4
+{
+    background-color: #F2913D;
+}
+
+.color5
+{
+    background-color: #F26E50;
+}

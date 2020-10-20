@@ -1,0 +1,7 @@
+# Homework 10 Repository
+
+1. You would use the unviersal selector when wanting to apply a style to teh entire page. A Element selector when you want serctain containers to have similar styles throughout the page. A class selector if you want specific styles you can use throughout the page more singulary. And ID selector when wanting to style a single object that you dont wat to style in the html file.
+
+2. The color pallete that i used was found on adobe color searching for color schemes that fit the 80s. The colors used were sourced from a retro gaming picture and I thought the colors fit the funky vibe that I was going for. I copied them in using the hex code to get the proper color. #BF268A, #D93BBE, #F2C029, #F2913D, #F26E50 are the colors.
+
+3. This week went well. I tried to make some interesting style choices that ended up being a little to muhc for me to figure out but I will figure it out eventually. I was trying to make vertical text inline with the images on the side to make it look cool and I got it to work for the most part but the positioning was off. I now realixe that i could have used the relatvie position modification to move them where I wanted but I forgot. Other than that the page went well. I really enjoy building these pages and look forward to learning more.
