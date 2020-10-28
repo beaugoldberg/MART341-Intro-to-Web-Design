@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Pacifico&display=swap');
+
+body
+{
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/sky-background.jpeg");
+}
+
+div
+{
+    font-family: 'Amatic SC', cursive, Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 800px;
+}
+
+h1
+{
+    font-family: 'Pacifico', cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 44px;
+}
+
+h3
+{
+    padding-top: 10px;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: auto;
+}
+
+.p1
+{
+    text-align: justify;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -90px;
+    line-height: 46px;
+}
+
+.p2
+{
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.date
+{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: auto;
+}
+
+a
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    color: black;
+}
+
+a:link
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: mintcream;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.a-final
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+p::first-letter
+{
+    font-size: 44px;
+}
