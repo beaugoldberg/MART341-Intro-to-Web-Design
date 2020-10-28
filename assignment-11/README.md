@@ -1,1 +1,9 @@
-# Homework 11 Repository
+# Homework 11 
+
+1. System Fonts - Fonts that are already built into the computer. I was actulla very suprised to read that some of these may be limited on the web.
+   Web Fonts - Fonts that have to be imported from a server to be used. Makes the use of font easier in just hosting from the server.
+   Web Safe Fonts - Fonts that are guarenteed to be available on the users computer so there will be no conflict in running the web page built with that font.
+
+2. Fallback fonts are important because if there is an issue getting the imported or embedded fonts on the users system then it has something to fall back on that will still be slightly appealing to the user. If there is no fallback font it will just default to basic fonts and likely not look great and make users not want to use the site.
+
+3. This homework went well. It was a fun topic to implement and I had fun trying to find a background and fonts that fit well together. The only issues that I ran into was there was a large gap between some of my containers like headers and paragraphs but I just made modifications to the margin in order to make it fit together properly. Also the background that I got from the internet copies as the page continued so it made some of the lower text a little difficult to see but i thought it looked fine so i kept it. I like the way the background and font go together and didnt want to try to make something totally different. Next time i would hopefully find a wallpaper that would scale and blend properly as it goes down so this isnt an issue. It kind of looks cool though anyway. It was cool to work more with fonts and decoration. The amount of mood a font can create on a site is awesome and its fun to explore this.
